@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: life savers, sans-serif;
+    font-weight: 800;
+}
+
+
+
+body {
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+   
+}
+
+.lista-icones {
+    background: #2c2f24;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 0 150px;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+
+
+
+.texto-croll{
+    color: #ffffff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* display: inline-block;  */
+  padding-left: 100%; /* Inicia o texto fora da tela */
+  animation: marquee 15s linear infinite; /* Aplica a animação */
+}
+
+.texto-croll img{
+    width: 70px;
+}
+
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0%); /* Início da animação */
+    }
+    100% {
+      transform: translateX(-100%); /* Fim da animação */
+    }
+  }
+
+header ul {
+    width: 200px;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+i {
+    font-size: 25px;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram,
+.fa-whatsapp {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding: 3px;
+}
+
+.fa-twitter {
+    color: #74c6f5;
+}
+
+.fa-facebook-f {
+    color: #0844c7;
+}
+
+.fa-instagram {
+    color: #9e388d;
+}
+
+.fa-whatsapp {
+    color: #019c1b;
+}
+
+.logo-nav {
+    background-color: #fafafa;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 90%;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+
+.logo:hover{
+    transform: scale(1.8); 
+    border-radius: 20px;
+   
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+button:hover{
+   box-shadow: 0 2px 6px;
+}
+
+.reserve-slogan {
+    background: #ad343e;
+    color: #ffffff;
+}
+
+
+.reserve-slogan:hover{
+    background: #db192a;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-principal {
+    width: 90%;
+    height: 90vh;
+    background-image: url(../imagens/image\ 110.png);
+    background-size:cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+
+.botões-slogan{
+    display: flex;
+    gap: 200px;
+}
+
+.slogan h1{
+    font-size: 3rem;
+    
+
+.slogan p{
+   
+}
